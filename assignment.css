@@ -1,0 +1,91 @@
+
+*{
+    box-sizing: border-box;
+   
+
+}
+
+section{
+    border: 3px solid black;
+    background-color: rgb(147, 147, 130);
+    width: 31.5%;
+    margin-left: 1.5%;
+    float: left; 
+}
+
+#chicken{
+    background-color: pink;
+    font-size: 17px;
+    font-weight: bold;
+   float: left;
+   text-align: center;
+
+}
+#Beef{
+    color: white;
+    background-color: maroon;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+   text-align: center;
+
+}
+#Sushi{
+    background-color:orange;
+    font-size: 17px;
+    font-weight: bold;
+   float: right;
+   text-align: center;
+
+}
+.containor{
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+p{
+    padding-left: 4%;
+
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+   
+    clear: both;
+}
+
+@media  screen and (min-width:992px) {
+    section{
+        border: 3px solid black;
+        background-color: rgb(147, 147, 130);
+        width: 31.5%;
+        margin-left: 1.5%;
+        float: left; 
+    }
+    
+    
+}
+@media  (max-width:991px) and (min-width:761px) {
+    section{
+        border: 3px solid black;
+        background-color: rgb(147, 147, 130);
+        width: 48%;
+        margin-left: 1.5%;
+        margin-bottom: 2%;
+    }
+    #fullsushi{
+    width: 98%;
+    
+     }
+    
+    .containor{
+        width: 100%;
+       clear: both;
+        margin-top: 15px;
+    }
+    #Sushi{
+        width: auto;
+    }
+
+}
+    

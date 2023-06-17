@@ -1,0 +1,81 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(28, 51, 62);
+    color: white;
+    margin: 0%;
+}
+.my{
+    display: inline-block;
+    font-size: large;
+    width: 70px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom:10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+
+    ul{
+      margin: 0%;
+      padding: 0%;
+    list-style-type: none;
+    }
+      li a{
+        margin: 0%;
+        padding: 0%;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+       font-size: small;
+        padding: 10px;
+        text-align: center;
+        
+       
+    }
+
+   header ul li{
+    float: left;
+    clear: right;
+    background-color: green;
+   
+   }
+  aside ul li a{
+    padding: 10PX;
+    font-size: small;
+    clear: both;
+    float: left;
+    background-color: green;
+   
+  
+  }
+  aside{
+    height: 600px;
+   
+  }
+  footer{
+    clear: both;
+  }
+  a:hover{
+    background-color: rgb(197, 199, 200);
+  }
+  section{
+    background-color: bisque;
+    height: 500px;
+    width: 300px;
+   
+    float: right;
+    padding: 0%;
+    margin: 0%;
+    
+
+  }
+  .side{
+    width: auto;
+   float: left;
+  }
+  
+   

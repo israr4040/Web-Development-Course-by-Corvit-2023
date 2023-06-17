@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Layout</title>
+    <style>
+        section{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <Form action="" method="dialog" style="width: 450px;">
+        <fieldset>
+            <br>
+            <legend>Israr Ul Haq</legend>
+       <section> <input type="image" value="image" src="/Images/carpic.jpg" height="80px" width="70px" alt="my image"  > </section>
+            <div>
+        <label >Name</label>    <input type="text" placeholder="Enter your name"  > <Br></Br>
+        <label >Password</label>    <input type="password" placeholder="Enter Password" > <br> <br>
+        <label  >Gender</label> 
+        <input  type="radio" name="Gender" id="Gender"> <label for="Male" id="Gender" name="Gender" >Male</label> 
+        <input type="radio" id="Gender" name="Gender"> <label for="Male" id="Gender" name="Gender" >Female</label> <br><br>
+        
+        <label for="slect" >Country</label>
+         <select name="Counry" id="country">
+            <option value="pk">Pakistan</option>
+            <option value="AG">Afghanistan</option>
+            <option value="ch">China</option>    
+            <option value="ir">Iran</option>
+        </select>   <br><br>
+        
+        <label for="University" >University Name</label>
+         <input list="UNI" > 
+        <datalist id="UNI"> 
+        <option >GCUF</option>
+        <option >AUF</option>
+        <option >NUST</option>
+        <option >IUB</option>
+        <option >EMERSON UNIVERSITY MULTAN</option>
+        <option >BZU</option>
+        </datalist> <br><br>
+
+        <label for="Message">Message</label> <br> <textarea name="Message" id="messasge" cols="30" rows="10"></textarea> <br><br>
+        
+        <label for="fileupload" >Upload File</label> <input type="file"> <br><br>
+       
+        <input type="Submit" value="Submit">
+         <input type="Reset" value="Reset"> <br><br>
+        </div>
+    </Form>
+</fieldset>
+</body>
+</html>

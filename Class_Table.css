@@ -1,0 +1,42 @@
+table {
+  
+    border-collapse: collapse;
+    margin-left: 20%;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Verdana, Geneva, Tahoma, sans-serif;
+}
+.th1{
+   
+    color: white;
+    column-span: 8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+th {
+    border: 2px solid rgb(1, 0, 0);
+    width: 100px;
+    text-align: center;
+    background-color: rgba(53, 159, 230, 0.992);
+    height: 50px;
+    color: rgb(253, 243, 45);
+  
+    /* border-collapse: collapse; */
+}
+td{
+    border: 2px solid rgb(3, 0, 0);
+    text-align: center;
+    
+
+}
+
+.trbg{
+
+    background-color: aquamarine;
+   
+}
+.trbg1{
+
+    background-color: rgb(227, 237, 182);
+}
+

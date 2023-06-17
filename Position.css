@@ -1,0 +1,25 @@
+body{
+    position: relative;
+}
+
+.maindiv{
+    position: relative;
+}
+.div1{
+    position: absolute;
+    width: 50%;
+    background-color: lightcoral;
+}
+.div2{
+    position: absolute;
+    width: 50%;
+    background-color: gray;
+    right: 0;
+
+}
+.div3{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    
+}

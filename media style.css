@@ -1,0 +1,65 @@
+
+#container{
+    border: 3px solid red;
+    background-color: green;
+    width: auto;
+    height: 400px;
+}
+
+#p1{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+
+}
+#p2{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+
+}
+#p3{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+@media (min-width: 1200px) {
+    #p1{
+        background-color: rgb(233, 50, 13);
+        width: 50%;
+        height: 300px;
+
+    }
+    #p2{
+        width: 30%;
+        height: 200px;
+    }
+    #p3{
+        width: 10%;
+        height: 100px;
+    }
+    
+}
+@media ( min-width: 500px) and (max-width: 993px){
+    #p1{
+        width: 30%;
+        height: 400px;
+    }
+    #p2{
+        width: 20%;
+        height: 200px;
+    
+    }
+    #p3{
+        width: 40px;
+        height: 30px;
+    }
+}
+

@@ -1,0 +1,181 @@
+body{
+    background-color: lightslategray;
+}
+.hdiv{
+display: flex;
+position: relative;
+}
+.imdiv{
+   margin-left: 50px;
+   margin-top: 5px;
+
+}
+.licon{
+    margin-left: 35px;
+    margin-top: 25px;
+    display: none;
+    position: static;
+        
+    }
+    .licontainor{
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 0px;
+    }
+    .hvrmenu{
+        display: none;
+        position: absolute;
+        margin-left: 60px;
+        min-width: 80px;
+        background-color: rgb(213, 209, 225);
+        box-shadow: 0px 8px 12px 0px rgb(172, 189, 203);
+        z-index: 1;
+    }
+    .hvrmenu a{
+        color: black;
+        text-decoration: none;
+        padding: 10px 14px;
+        display: block;
+    }
+
+    .name{
+        margin-top: 20px;
+        margin-left: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25PX;
+        display: none;
+        
+    }
+
+.hdli{
+   list-style-type: none;
+    margin-left: 40px;
+    text-decoration: none;
+    
+}
+.ulflex{
+    display: flex;
+    margin-left: 10%;
+    
+}
+/* .asflex{
+    background-color: yellow; 
+    /* display: flex; */
+    /* width: 20%;
+}  */
+ .ulasflex{
+    list-style-type: none;
+    margin-top: 50px;
+
+}
+.asli{
+    margin-top: 10px;
+}
+
+.div2{
+    /* display: flex; */
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+    height: 630px;
+    margin-left: 3%;
+}
+.dive3{
+   background-color: rgb(227, 220, 234);
+   height: 608px;
+   /* width: 98%; */
+  margin: 10px;
+   border: 2px solid black;
+   border-radius: 5px;
+}
+.maindiv{
+    display: flex;
+}
+li:hover{
+    background-color: rgb(239, 237, 240);
+}
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+}
+/* Mdia Quries For Medium Screen */
+/* @media (min-width: 667px) and (max-width: 992px){
+.hdflex{
+        width: 400px;
+}
+.hdiv{
+    width: 300px;
+}
+} */
+@media (max-width: 666px){
+    *{
+        box-sizing: border-box;
+    }
+
+    .dive3{
+        /* width: 95%; */
+        /* height: 90px; */
+        margin: 10px;
+
+    } 
+    .div2{
+        width: 100%;
+        height: 100%;
+        /* margin: 15px; */
+        /* margin-left: 0px; */
+    }
+   
+   
+    .imdiv{
+        width: 10px;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+  
+    .hdli{
+        /* width: 50px;
+        margin-left: 5px;
+        margin-top: 15px; */
+        display: none;
+
+    }
+   
+.asflex{
+    margin-left: 0px;
+    background-color: rgb(172, 189, 203);
+    height: 420px;
+    margin-top: 15px;
+    padding: 0%;
+    border: 2px solid black;
+    display: none;
+}
+.licon{
+    margin-left: 120px;
+    margin-top: 25px;
+    display: flex;
+        
+    }
+    .name{
+        margin-top: 20px;
+        margin-left: 85px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25PX;
+        display:flex;
+        
+    }
+    .hvrmenu a:hover{
+        background-color: rgb(253, 244, 244);
+    }
+    /* .licontainor:hover .hvrmenu {
+        display: block;
+    } */
+    /* .licon:hover + .hvrmenu  {
+        display:inline-block
+
+  
+    } */
+    .licontainor:hover .licon + .hvrmenu {
+        display: block;
+    }
+}
