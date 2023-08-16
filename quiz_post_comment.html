@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quetion 3</title>
+    <style>
+        table th{
+            border: 2px solid black;
+
+        }
+        table td{
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table"></table>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        axios.get('https://jsonplaceholder.typicode.com/post/10/comments')
+            .then((response) => {
+                console.log(response.data)
+                var table = document.getElementById('table');
+                let data = "<tr>" +
+                    "<th>UserID</th>" +
+                    "<th>ID</th>" +
+                    "<th>Name</th>" +
+                    "<th>Email</th>"+
+                    "<th>Body</th>"
+                    "</tr>";
+                    response.data.forEach((e) => {
+                        data = data + "<tr>" +
+                            "<td>" + e.postId + "</td>" +
+                            "<td>" + e.id + "</td>" +
+                            "<td>" + e.name + "</td>" +
+                            "<td>" + e.email + "</td>" +
+                            "<td>" + e.body + "</td>" +
+                            "</tr>";
+                        console.log(data);
+                        table.innerHTML = data;
+
+                    })
+            })
+    </script>
+</body>
+
+</html>

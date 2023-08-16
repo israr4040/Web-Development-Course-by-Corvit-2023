@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <title>axios post data in card</title>
+    <style>
+        body {
+
+            background-color: rgb(172, 209, 209);
+        }
+
+        .row {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+
+        }
+
+        .card {
+            padding: 0px;
+            margin: 0px;
+            align-self: center;
+        }
+
+        .btn {
+            margin-left: 100px;
+        }
+
+        h1 {
+            margin-left: 15%;
+            color: rgb(0, 20, 244);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="row">
+            <div class="card mt-3" style="width: 18rem;">
+                <div class="card-header">
+                    <h1>User Data </h1>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="username"></li>
+                    <li class="list-group-item" id="userid"></li>
+                    <li class="list-group-item" id="titl"></li>
+                    <li class="list-group-item" id="bady"></li>
+                    <li class="list-group-item" id="slct"></li>
+                    <li class="list-group-item" id="rdbtn"></li>
+
+
+                </ul>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enter Data</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="farm" novalidate>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label" >username:</label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder=" @username" pattern="[A-Za-z@]{3,}"  required>
+                                <span class="invalid-feedback">Enter valid username </span>
+                                <span class="valid-feedback"> </span>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="user-id" class="col-form-label">CNIC</label>
+                                <input type="text" class="form-control" id="userId" pattern="([0-9]{5})[\-]([0-9]{7})[\-]([0-9]{1})" placeholder="XXXXX-XXXXXXX-X" required >
+                                <span class="invalid-feedback">Enter valid CNIC </span>
+                                <span class="valid-feedback"> </span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="title" class="col-form-label">Title:</label>
+                                <input type="text" class="form-control" id="title">
+                                <div class="mb-3">
+                                    <label for="body" class="col-form-label">Body:</label>
+                                    <input type="text" class="form-control" id="body">
+                                </div>
+                               <div class="mb-3 ">
+                                <select class="form-select" id="slectuni">
+                                <option value="Option" selected disabled>Slect Option</option>
+                                <option value="GCUF">GCUF</option>
+                                <option value="GCUL">NUML</option>
+                                <option value="BZU">BZU</option>
+                                <option value="IUB">IUB</option>
+                            </select>
+                               </div>
+
+                                <div class="mb-3">
+                                    <input type="radio" name="gender" value="Male" class="form-check-input" id="mradio">
+                                    <label for="male" >Male</label>
+                                    <input type="radio" name="gender" value="Female" class="form-check-input" id="fradio">
+                                    <label for="male">Female</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="checkbox" class="form-check-input" id="checkbox" required>
+                                    <label for="checkbox" class="form-check-label">Check me out:</label>
+                                </div>
+                                  
+
+                                <div class="mb-3">
+                                    <input type="submit" class="form-control bg-success " 
+                                        id="submit">
+
+                                </div>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Update</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="model_form_submit.js"></script>
+</body>
+
+</html>

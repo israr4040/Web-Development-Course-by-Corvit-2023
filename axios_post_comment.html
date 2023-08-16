@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="jquery.js"></script>
+    <title>Axios user data in card</title>
+    <style>
+       
+        body{
+
+            background-color: rgb(172, 209, 209);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="row"></div>
+    </div>
+
+    <script>
+        axios.get("https://jsonplaceholder.typicode.com/posts/1/comments")
+        .then(function (comment) {
+  var data="";
+  comment.data.forEach(element => {
+       data +='<div class="col-12 col-lg-4 col-md-4 col-sm-6 col-xl-3 mt-2 mb-5 " >' +
+            '<div class="card bg-secondary bg-gradient text-white";">' +
+            '<h4 class="p-2 text-center"> User Data</h4>' +
+            '<ul class="list-group list-group-flush">' +
+            '<li class="list-group-item">' + '<b>PostId:</b>' + ' ' + element.postId + '</li>' +
+            ' <li class="list-group-item">' + '<b>ID:</b>' + ' ' + element.id + '</li>' +
+            ' <li class="list-group-item">' + '<b>name:</b>' + ' ' + element.name + '</li>' +
+            ' <li class="list-group-item">' + '<b>email:</b>' + ' ' + element.email + '</li>' +
+            ' <li class="list-group-item">' + '<b>Body:</b>' + ' ' + element.body + '</li>' +
+            '</ul>' +
+
+
+            '</div>' +
+            '</div>'
+$("#row").html(data)
+
+    })
+});
+    </script>
+
+
+    <!-- <script src="Assignment_object.js"></script> -->
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
