@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place Location on Google Map</title>
+    <style>
+        /* Set the map's height */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Place Location on Google Map</h1>
+    <div id="map"></div>
+
+    <script>
+        // Initialize the map
+        function initMap() {
+            // Place's latitude and longitude
+            var placeLatLng = { lat: 30.1575, lng: 71.5249 };
+
+            // Create a map centered at the place's location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: placeLatLng,
+                zoom: 15
+            });
+
+            // Add a marker at the place's location
+            var marker = new google.maps.Marker({
+                position: placeLatLng,
+                map: map,
+                title: 'Place Name'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

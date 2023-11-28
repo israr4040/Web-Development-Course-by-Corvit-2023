@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+width: 1440px;
+background-color: #1A1B1C;
+
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    color: orange;
+    border: 2px solid orange;
+    font-size: 40px;
+    align-content: space-between;
+    justify-content: space-between;
+    
+  
+}
+.header{
+    display: flex;
+    height: 228px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+}
+.logo{
+    color: white;
+    width: 238px;
+    margin-right: 75px;
+    height: 147px;
+}
+.nav{
+    width: 928px;
+    /* height: 67px; */
+}
+.nav ul li a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: orange;
+
+}
+ .nav ul li a:hover  {
+    background-color: orange;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+ul>li>a{
+    margin-left: 30px;
+}
+/* how to add shadow... */
+.section1{
+    background-image: url("Images/Background_s1.png");
+    height: 593px;
+    
+  
+
+}
+.section2{
+    background-image: url("Images/Background_s2.png");
+    height: 1027px;
+
+}
+#s1p{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+#s1h1{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#spacebtw12{
+    height: 62px;
+}
+
